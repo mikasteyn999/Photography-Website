@@ -1,0 +1,156 @@
+/*Set container grid properties/sizes */
+#container {
+  display: grid;
+  padding: 0;
+  grid-template-rows: 0% 60% 35%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+/*Styling applicable to whole page*/
+* {
+  font-family: century-gothic;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  margin-right: 70px;
+}
+
+header nav a:hover {
+  background-color: #444;
+}
+
+header nav a:active {
+  background-color: #444;
+}
+
+#header.hide {
+  top: -50px;
+  transition: top 0.5s;
+}
+
+.bi-heart {
+  position: absolute;
+  padding-bottom: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  transform: translate(-50%, -32%);
+}
+
+/*Styling for top buttons*/
+/*Image styling*/
+.coverImage {
+  width: 100%;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 100%;
+}
+
+.aboutMeImage {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-left: 25%;
+  max-width: 90%;
+  max-height: 100%;
+}
+
+.aboutMe {
+  font-size: 0.75vw;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-top: 25%;
+  max-width: 100%;
+}
+
+/*Social buttons styling*/
+#social {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  z-index: 9;
+}
+
+.facebook {
+  width: 70px;
+  height: 70px;
+  margin-left: 51px;
+  margin-top: 20%;
+  position: fixed;
+}
+
+.instagram {
+  width: 50px;
+  height: 50px;
+  margin-left: 60px;
+  margin-top: 25%;
+  position: fixed;
+}
+
+/*Make page responsive for mobile (not working, come back later)*/
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+/*Quote styling*/
+.quote {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 50px;
+  text-align: center;
+}
+
+/*Back to top button styling*/
+.backToTopButton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 20%;
+  margin-bottom: 50px;
+}
+
+.backToTop {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

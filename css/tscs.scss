@@ -1,0 +1,250 @@
+* {
+    font-family: century-gothic;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    padding: 0;
+    grid-template-rows: .2fr 0.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    margin-right: 70px;
+  }
+  
+  header nav a:hover {
+    background-color: #444;
+  }
+
+  header nav a:active {
+    background-color: #444;
+  }
+
+  #header.hide {
+    top: -50px;
+    transition: top 0.5s;
+  }
+
+.bi-heart {
+    position: absolute;
+    padding-bottom: 30px;
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    transform: translate(-50%, -32%);
+}  
+
+// #topButtons {
+//     width: 100%;
+//     grid-column-start: 1;
+//     grid-column-end: 6;
+//     grid-row-start: 1;
+//     grid-row-end: 2;
+//     position: center, fixed;
+//     padding: .5% 0;
+//     text-decoration: none;
+// }
+
+// .topButton1 {
+//     font-size: 14pt;
+//     text-align: center;
+//     background-color: white;
+//     color: rgb(85, 85, 85);
+//     font-family: century-gothic;
+//     font-weight: 400;
+//     font-style: normal;
+//     border: none;
+//     margin-right: 50px;
+//     margin-left: 10%;
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+// }
+// .topButton2 {
+//     font-size: 14pt;
+//     text-align: center;
+//     background-color: white;
+//     color: rgb(85, 85, 85);
+//     font-family: century-gothic;
+//     font-weight: 400;
+//     font-style: normal;
+//     border: none;
+//     margin-right: 50px;
+//     margin-left: 50px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     text-decoration: none;
+// }
+// .topButton3 {
+//     font-size: 14pt;
+//     text-align: center;
+//     background-color: white;
+//     color: rgb(85, 85, 85);
+//     font-family: century-gothic;
+//     font-weight: 400;
+//     font-style: normal;
+//     border: none;
+//     margin-right: 50px;
+//     margin-left: 50px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     text-decoration: none;
+// }
+// .topButton4 {
+//     font-size: 14pt;
+//     text-align: center;
+//     background-color: white;
+//     color: rgb(85, 85, 85);
+//     font-family: century-gothic;
+//     font-weight: 400;
+//     font-style: normal;
+//     border: none;
+//     margin-right: 50px;
+//     margin-left: 50px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+// }
+// .topButton5 {
+//     font-size: 14pt;
+//     text-align: center;
+//     background-color: white;
+//     color: rgb(85, 85, 85);
+//     font-family: century-gothic;
+//     font-weight: 400;
+//     font-style: normal;
+//     border: none;
+//     margin-right: 40px;
+//     margin-left: 40px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+// }
+// .topButton6 {
+//     font-size: 14pt;
+//     text-align: center;
+//     background-color: white;
+//     color: rgb(85, 85, 85);
+//     font-family: century-gothic;
+//     font-weight: 400;
+//     font-style: normal;
+//     border: none;
+//     margin-right: 10%;
+//     margin-left: 40px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+// }
+
+// .topButton1:hover {
+//     background-color: rgb(230, 230, 230);
+//     color: white;
+// }
+// .topButton2:hover {
+//     background-color: rgb(230, 230, 230);
+//     color: white;
+// }
+// .topButton3:hover {
+//     background-color: rgb(230, 230, 230);
+//     color: white;
+// }
+// .topButton4:hover {
+//     background-color: rgb(230, 230, 230);
+//     color: white;
+// }
+// .topButton5:hover {
+//     background-color: rgb(230, 230, 230);
+//     color: white;
+// }
+// .topButton6:hover {
+//     background-color: rgb(230, 230, 230);
+//     color: white;
+// }
+
+// .topButton1:focus {
+//     border: 2px;
+//     border-style: solid;
+//     border-color: rgb(85, 85, 85);
+// }
+// .topButton2:focus {
+//     border: 2px;
+//     border-style: solid;
+//     border-color: rgb(85, 85, 85);
+// }
+// .topButton3:focus {
+//     border: 2px;
+//     border-style: solid;
+//     border-color: rgb(85, 85, 85);
+// }
+// .topButton4:focus {
+//     border: 2px;
+//     border-style: solid;
+//     border-color: rgb(85, 85, 85);
+// }
+// .topButton5:focus {
+//     border: 2px;
+//     border-style: solid;
+//     border-color: rgb(85, 85, 85);
+// }
+// .topButton6:focus {
+//     border: 2px;
+//     border-style: solid;
+//     border-color: rgb(85, 85, 85);
+// }
+
+// a:link { text-decoration: none; }
+// a:visited { text-decoration: none; }
+// a:hover { text-decoration: none; }
+// a:active { text-decoration: none; }
+
+#social {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 9;
+}
+
+.facebook {
+    width: 70px;
+    height: 70px;
+    margin-left: 51px;
+    margin-top: 20%;
+    position: fixed;
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 25%;
+    position: fixed;
+}
+
+.text{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
